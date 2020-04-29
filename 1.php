@@ -19,6 +19,7 @@ class qinu_class{
         $upToken = $auth->uploadToken($bucket);
 
         return $upToken;
+
     }
 
 
