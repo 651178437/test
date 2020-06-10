@@ -1,0 +1,39 @@
+2020-06-10 09:48:39 Workerman[start.php] start in DAEMON mode
+2020-06-10 09:48:39 Workerman[start.php] already running
+2020-06-10 09:48:53 Workerman[start.php] start in DAEMON mode
+2020-06-10 09:48:53 Workerman[start.php] already running
+2020-06-10 09:52:37 Workerman[start.php] start in DEBUG mode
+2020-06-10 09:52:37 Workerman[start.php] already running
+2020-06-10 09:52:47 Workerman[start.php] start in DAEMON mode
+2020-06-10 09:52:47 Workerman[start.php] already running
+2020-06-10 09:53:00 Workerman[start.php] stop 
+2020-06-10 09:53:00 Workerman[start.php] is stoping ...
+2020-06-10 09:53:00 Workerman[start.php] Stopping ...
+2020-06-10 09:53:00 Workerman[start.php] has been stopped
+2020-06-10 09:53:00 Workerman[start.php] stop success
+2020-06-10 09:53:16 Workerman[start.php] connections 
+2020-06-10 09:53:16 Workerman[start.php] not run
+2020-06-10 10:11:05 Workerman[start.php] start in DAEMON mode
+2020-06-10 10:16:12 Workerman[start.php] start in DAEMON mode
+2020-06-10 10:31:12 WORKER EXIT UNEXPECTED E_ERROR Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php:1581
+Stack trace:
+#0 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php(1581): PDO->__construct('mysql:dbname=lg...', 'root', 'liguopeng163.co...', Array)
+#1 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php(1572): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/Db.php(44): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', 3306, 'root', 'liguopeng163.co...', 'lgptest')
+#3 /home/lixinjian/www/test/workerman/Applications/Chat/start_time.php(38): GatewayWorker\Lib\Db::instance('db')
+#4 [internal function]: {closure}()
+#5 /home/lixinjian/www/test/workerman/Workerman/Events/Select.php(201): call_user_func_array(Object(Closure), Array)
+#6 /home/lixinjian/www/test/workerman/Workerman/Events/Select.php(249): Workerman\Events\Select->tick()
+#7  in /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php on line 1581
+2020-06-10 10:31:12 worker[none:11475] exit with status 65280
+2020-06-10 10:46:12 WORKER EXIT UNEXPECTED E_ERROR Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php:1581
+Stack trace:
+#0 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php(1581): PDO->__construct('mysql:dbname=lg...', 'root', 'liguopeng163.co...', Array)
+#1 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php(1572): GatewayWorker\Lib\DbConnection->connect()
+#2 /home/lixinjian/www/test/workerman/GatewayWorker/Lib/Db.php(44): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', 3306, 'root', 'liguopeng163.co...', 'lgptest')
+#3 /home/lixinjian/www/test/workerman/Applications/Chat/start_time.php(38): GatewayWorker\Lib\Db::instance('db')
+#4 [internal function]: {closure}()
+#5 /home/lixinjian/www/test/workerman/Workerman/Events/Select.php(201): call_user_func_array(Object(Closure), Array)
+#6 /home/lixinjian/www/test/workerman/Workerman/Events/Select.php(249): Workerman\Events\Select->tick()
+#7  in /home/lixinjian/www/test/workerman/GatewayWorker/Lib/DbConnection.php on line 1581
+2020-06-10 10:46:12 worker[none:12393] exit with status 65280
